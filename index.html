@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EBL Bank</title>
+    <!-- tailwind css cdn -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-16">
+        Welcome to
+        <span class="font-semibold text-purple-600">EBL Bank</span>
+      </h1>
+    </header>
+    <main>
+      <section class="bg-green-100 w-2/4 mx-auto mt-8 text-center rounded-2xl">
+        <h3
+          class="
+            text-2xl
+            p-8
+            mt-8
+            uppercase
+            font-extrabold
+            bg-green-300
+            p-2
+            rounded
+            mb-8
+            text-white
+          "
+        >
+          Please Login
+        </h3>
+        <div>
+          <input
+            class="border border-gray-400 rounded p-2 block w-2/4 m-auto mb-2"
+            type="email"
+            placeholder="Email"
+            required
+            id="user-email"
+          />
+          <input
+            class="border border-gray-400 rounded p-2 block w-2/4 m-auto mb-2"
+            type="password"
+            placeholder="Password"
+            required
+            id="user-password"
+          />
+          <button
+            class="
+              text-center
+              bg-green-500
+              m-auto
+              p-2
+              text-white
+              rounded
+              mb-8
+              mt-2
+              w-1/4
+              uppercase
+              font-bold
+            "
+            type="submit"
+            id="submit-btn"
+          >
+            Log in
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="h-3/4 bg-purple-200 mt-52 p-8 w-3/4 m-auto rounded">
+      <h3 class="text-center text-3xl text-purple-900 font-extrabold">
+        Copyright&copy;2021 | EBL Bank.
+      </h3>
+    </footer>
+    <!-- javascript -->
+    <script src="login.js"></script>
+  </body>
+</html>
