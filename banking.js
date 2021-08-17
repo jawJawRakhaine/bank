@@ -23,7 +23,7 @@ function updateBalance(amount, isAdd) {
     balanceTotal.innerText = prevBalanceTotal - amount;
   }
 }
-
+// deposit
 document.getElementById("deposit-btn").addEventListener("click", function () {
   const depositAmount = getInputValue("deposit-amount");
   if (depositAmount > 0) {
