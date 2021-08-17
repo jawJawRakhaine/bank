@@ -30,7 +30,7 @@ document.getElementById("deposit-btn").addEventListener("click", function () {
     updateTotalField("deposit-balance", depositAmount);
     updateBalance(depositAmount, true);
   } else {
-    alert("Money could not be negative number or string.");
+    alert("Could not perform this operation.");
   }
 });
 
