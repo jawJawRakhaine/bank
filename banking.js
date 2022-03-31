@@ -29,6 +29,8 @@ document.getElementById("deposit-btn").addEventListener("click", function () {
   if (depositAmount > 0) {
     updateTotalField("deposit-balance", depositAmount);
     updateBalance(depositAmount, true);
+  } else if (depositAmount < 0 || isNaN(depositAmount) || depositAmount === 0) {
+    alert("Please enter a valid amount.");
   } else {
     alert("Could not perform this operation.");
   }
@@ -41,6 +43,12 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
   if (withdrawAmount > 0 && withdrawAmount < currentBalance) {
     updateTotalField("withdraw-balance", withdrawAmount);
     updateBalance(withdrawAmount, false);
+  } else if (
+    isNaN(withdrawAmount) ||
+    withdrawAmount < 0 ||
+    withdrawAmount === 0
+  ) {
+    alert("Please enter a valid amount.");
   } else {
     alert("Insufficient balance.Please try again later.");
   }
