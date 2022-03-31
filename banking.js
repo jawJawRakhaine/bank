@@ -42,6 +42,6 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
     updateTotalField("withdraw-balance", withdrawAmount);
     updateBalance(withdrawAmount, false);
   } else {
-    alert("Could not perform this operation.");
+    alert("Insufficient balance.Please try again later.");
   }
 });
